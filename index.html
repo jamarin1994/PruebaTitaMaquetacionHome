@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNEAK</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <!--Encabezado Desktop-->
+        <section class="encabezadoDesktop">
+            <img src="img/logoSneak.png" alt="Logo SNEAK">
+            <div class="buscador">
+                <!--Navegador Desktop-->
+                <nav>
+                    <ul id="navegador">
+                        <li class="botonMenu activo">All</li>
+                        <li class="botonMenu">Branding</li>
+                        <li class="botonMenu">Web</li>
+                        <li class="botonMenu">Photography</li>
+                        <li class="botonMenu">App</li>
+                    </ul>
+                </nav>
+                <div>
+                    <form action="">
+                    <input type="search" placeholder="Search..." required>
+                    <i class="fa fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </section>
+    
+        <!--Encabezado Mobile-->
+        <section class="menuMobile">
+          <div class="menuMobileLogo">
+            <!--Navegador Mobile-->
+            <nav>
+              <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="navegadorMobile">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#">Branding</a></li>
+                  <li><a href="#">Web</a></li>
+                  <li><a href="#">Photography</a></li>
+                  <li><a href="#">App</a></li>
+                </ul>
+              </div>
+            </nav>
+            <img src="img/logoSneak.png" alt="Logo SNEAK">
+          </div>
+          <div class="logoBuscador">
+            <div class="buscar">
+              <i class="fa fa-search"></i>
+              <input type="text" name="buscador" id="buscador-mobile" placeholder="Search...">
+            </div>
+          </div>
+        </section>
+      </header>
+    <!--Bloque Principal-->
+    <section class="bloquePrincipal">
+        <h1>EXPLORE BEYOND HORIZON</h1>
+        <p>Magna mundi referrentur quo, no rebum dignissim qui. 
+        </br>Per quodsi accusata id, agam labores.</p>
+        <a href="">VIEW OUR WORK</a>
+    </section>
+    <!--Imágenes Portafolio-->
+    <section class="imagenesPortafolio">
+        <div class="iconosGaleria">
+            <span  onclick="cambiarFormaGrid()" class="gridGallery icono"></span>
+            <span id="bars" onclick="cambiarFormaBars()" class="barsGallery icono"></span>
+        </div>
+        <!--Navegador Galería-->
+        <div>
+            <nav>
+                <ul id="navegador1">
+                    <li class="botonMenu1 activo1">All</li>
+                    <li class="botonMenu1">Branding</li>
+                    <li class="botonMenu1">Web</li>
+                    <li class="botonMenu1">Photography</li>
+                    <li class="botonMenu1">App</li>
+                </ul>
+            </nav>
+        </div>
+        <!--Galería de Fotos-->
+        <div id="contenedorGaleriaImagenes">
+
+        </div>
+        <div class="contenedorBoton">
+            <button onclick="crearGaleria()">Show Me More</button>
+        </div>
+    </section>
+    <footer>
+        <p>© 2016 - <span>Sneak</span> All Right Reserved</p>
+        <div class="redesSociales">
+            <a href="https://www.facebook.com/" target="_blank"><span class="icono facebook"></span></a>
+            <a href="https://twitter.com/" target="_blank"><span class="icono twitter"></span></a>
+            <a href="https://dribbble.com/" target="_blank"><span class="icono dribble"></span></a>
+            <a href="https://www.google.com/" target="_blank"><span class="icono google"></span></a>
+            <a href="https://www.youtube.com/" target="_blank"><span class="icono youtube"></span></a>
+        </div>
+    </footer>
+    <script src="scriptApi.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
